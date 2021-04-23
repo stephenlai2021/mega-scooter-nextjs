@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net"
+    }
+  ],
+  "hero": [
+    {
+      "id": 1,
+      "imageSrc": "https://www.unstudio.com/image/2018/7/26/s_un_studio_projectswww_material2018southbank_by_beulah09_sbb_green_spine_belo.jpg%28%29%28mediaclass-masthead-image.4e1a49d738a19641358911833dfb355bf10d147f%29%28crop-%2B835%2B1297%29%284428D694D6FFDA6C5608031EBBD9F43D%29.jpg"
+    },
+    {
+      "id": 2,
+      "imageSrc": "https://static.chaosgroup.com/gallery_images/images/000/000/914/gallery_image/Smart_City_Flying_Architecture_-_Zaha_Hadid_Architects-rhino1.jpg?1551751064"
+    },
+    {
+      "id": 3,
+      "imageSrc": "https://sandicraig.com/wp-content/uploads/2020/06/ntolhn3l16uo4yyk.jpeg"
+    },
+    {
+      "id": 4,
+      "imageSrc": "https://media.architecturaldigest.com/photos/5d49d4d911d3930008a81c6c/master/pass/GettyImages-872448084.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "type": "Favorites",
+      "active": true
+    },
+    {
+      "id": 2,
+      "type": "Sprint",
+      "active": false
+    },
+    {
+      "id": 3,
+      "type": "City",
+      "active": false
+    },
+    {
+      "id": 4,
+      "type": "Race",
+      "active": false
+    },
+    {
+      "id": 5,
+      "type": "Yellow",
+      "active": false
+    },
+    {
+      "id": 6,
+      "type": "Blue",
+      "active": false
+    },
+    {
+      "id": 7,
+      "type": "New",
+      "active": false
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "imgSrc": "/bike1.png",
+      "title": "Model Y120",
+      "price": "$ 2680.00",
+      "bgColor": "#FFF5EA",
+      "model": "Y120"
+    },
+    {
+      "id": 2,
+      "imgSrc": "/bike2.png",
+      "title": "Model B160",
+      "price": "$ 2500.00",
+      "bgColor": "#D3DDFF",
+      "model": "B160"
+    },
+    {
+      "id": 3,
+      "imgSrc": "/bike1.png",
+      "title": "Model B160",
+      "price": "$ 2500.00",
+      "bgColor": "#FFD3EA",
+      "model": "B160"
+    },
+    {
+      "id": 4,
+      "imgSrc": "/bike2.png",
+      "title": "Model B160",
+      "price": "$ 2500.00",
+      "bgColor": "#FFF5EA",
+      "model": "B160"
+    }
+  ]
+}
