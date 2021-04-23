@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "backend": "json-server --watch data/db.json --port 8080",
-    "push": "git add . && git commit -m commit && git push origin master"
+    "push": "git add . && git commit -m commit && git push origin main"
   },
   "dependencies": {
     "framer-motion": "^2.9.5",
