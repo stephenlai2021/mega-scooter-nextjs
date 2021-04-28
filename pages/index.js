@@ -17,7 +17,7 @@ export default function Home() {
         <title>Mega Scooter</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      ;
+      
       <img src="/logo.png" className="logo" />
       <img src="/bg.png" className="bg" />
       <div className="indicators">
