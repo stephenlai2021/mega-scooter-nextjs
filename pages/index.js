@@ -2,9 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import { useEffect } from 'react'
 
 export default function Home() {
-  const router = useRouter();
+  const router = useRouter();  
 
   const handleClick = () => {
     router.push("/catalog");
@@ -17,8 +18,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       ;
-      <img src="/logo.png" width="99" height="80" className="logo" />
-      <Image src="/bg.png" width="375" height="402" className="bg" />
+      <img src="/logo.png" className="logo" />
+      <img src="/bg.png" className="bg" />
       <div className="indicators">
         <div className="dot active"></div>
         <div className="dot"></div>
@@ -35,32 +36,32 @@ export default function Home() {
       </motion.button>
       <style>{`
         .layout {
-          max-width: 375px;
-          margin: 30px auto;
-          height: 812px;
+          max-width: 50rem;
           background: #ffffff;
-          border-radius: 36px;
           text-align: center;
+          overflow: hidden;
         }
         .logo {
           position: relative;
-          top: 50px;
+          top: 3.125rem;
+          width: 5.625rem;
+          height: 5rem;
         }
         .bg {
-          position: absolute;
-          top: 105px;
+          width: 23.4375rem;
+          height: 25.125rem;
         }
         .indicators {
           display: flex;
           justify-content: center;
         }
         .dot {
-          margin-top: 20px;
-          width: 9px;
-          height: 9px;
-          margin-right: 17px;
+          margin-top: 1.25rem;
+          width: 0.5625rem;
+          height: 0.5625rem;
+          margin-right: 1.0625rem;
           border-radius: 50%;
-          border: 1.5px solid #e3657c;
+          border: 0.0938rem solid #e3657c;
         }
         .dot.active {
           background: linear-gradient(
@@ -71,21 +72,21 @@ export default function Home() {
         }
         h1 {
           font-weight: 500;
-          font-size: 30px;
+          font-size: 1.875rem;
           line-height: 110%;
-          margin: 30px 60px 20px 60px;
+          margin: 1.875rem 3.75rem 1.25rem 3.75rem;
           text-align: center;
           letter-spacing: -0.01em;
           color: #1b3152;
         }
         h3 {
           font-weight: normal;
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 130%;
           text-align: center;
           letter-spacing: -0.01em;
           color: #1b3152;
-          margin-bottom: 40px;
+          margin-bottom: 2.5rem;
         }
         button {
           background: linear-gradient(
@@ -93,13 +94,14 @@ export default function Home() {
             #e3657c 4.83%,
             #b93d56 112.18%
           );
-          border-radius: 12px;
-          width: 315px;
-          height: 59px;
+          border-radius: 0.75rem;
+          width: 19.6875rem;
+          height: 3.6875rem;
           color: white;
-          font-size: 18px;
+          font-size: 1.125rem;
           border: none;
           outline: none;
+          margin-bottom: 2.5rem;
         }
       `}</style>
     </div>

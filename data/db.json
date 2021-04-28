@@ -101,5 +101,61 @@
       "bgColor": "#FFF5EA",
       "model": "B160"
     }
+  ],
+  "accessories": [
+    {
+      "id": 1,
+      "imgSrc": "/helmet1.png",
+      "desc": "Retro Mega",
+      "title": "Helmet Retro Mega",
+      "price": "$ 480.00",
+      "like": false,
+      "bgColor": "#FFF5EA"
+    },
+    {
+      "id": 2,
+      "imgSrc": "/helmet2.png",
+      "desc": "Retro Ultra",
+      "title": "Helmet Retro Ultra",
+      "price": "$ 480.00",
+      "like": false,
+      "bgColor": "#D3DDFF"
+    },
+    {
+      "id": 3,
+      "imgSrc": "/helmet1.png",
+      "desc": "Retro Mega",
+      "title": "Helmet Retro Mega",
+      "price": "$ 480.00",
+      "like": false,
+      "bgColor": "#FFD3EA"
+    },
+    {
+      "id": 4,
+      "imgSrc": "/helmet2.png",
+      "desc": "Retro Mega",
+      "title": "Helmet Retro Mega",
+      "price": "$ 480.00",
+      "like": false,
+      "bgColor": "#FFF5EA"
+    },
+    {
+      "id": 5,
+      "imgSrc": "/helmet2.png",
+      "desc": "Retro Ultra",
+      "title": "Helmet Retro Ultra",
+      "price": "$ 480.00",
+      "like": false,
+      "bgColor": "#D3DDFF"
+    },
+    {
+      "id": 6,
+      "imgSrc": "/helmet1.png",
+      "desc": "Retro Mega",
+      "title": "Helmet Retro Mega",
+      "price": "$ 480.00",
+      "like": false,
+      "bgColor": "#FFD3EA"
+    }
   ]
 }
