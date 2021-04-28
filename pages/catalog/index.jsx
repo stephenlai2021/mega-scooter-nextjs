@@ -29,7 +29,7 @@ export default function Catalog({ categories, cards, helmets }) {
       <header>
         <img src="/menu.png" alt="menu" className="menu" />
         <span className="title-header">Catalog</span>
-        <img src="/avatar.png" alt="avatar" className="avatar" />
+        <img src="/batman.png" alt="avatar" className="avatar" />
       </header>
 
       <p className="title-moped">Choose your moped</p>
@@ -77,7 +77,7 @@ export default function Catalog({ categories, cards, helmets }) {
               <div className="img-heart">
                 <img
                   className="icon-heart"
-                  src="/heart-icon.png"
+                  src="/heart-filled.png"
                   alt="heart image"
                 />
               </div>
