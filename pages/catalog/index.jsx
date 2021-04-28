@@ -77,7 +77,7 @@ export default function Catalog({ categories, cards, helmets }) {
               <div className="img-heart">
                 <img
                   className="icon-heart"
-                  src="/heart-icon.png"
+                  src="/heart-filled.png"
                   alt="heart image"
                 />
               </div>
