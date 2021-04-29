@@ -96,7 +96,7 @@ export default function Catalog({ categories, cards, helmets }) {
         .layout {
           max-width: 50rem;
           background: #ffffff;
-          padding: 3.125rem 0 0 1.875rem;
+          padding: 1.25rem 0 0 1.875rem;
           overflow: hidden;
         }
         header {

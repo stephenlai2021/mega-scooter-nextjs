@@ -43,7 +43,7 @@ export default function Home() {
         }
         .logo {
           position: relative;
-          top: 3.125rem;
+          top: 20px;
           width: 5.625rem;
           height: 5rem;
         }
