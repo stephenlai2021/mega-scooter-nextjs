@@ -1,8 +1,10 @@
 import { useTapGesture } from "framer-motion";
 import { useEffect, useState } from "react";
 import { db } from '../../firebase/config'
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 
-export const getStaticProps = async () => {  
+export const getStaticProps = async ({ params }) => {  
   const res1 = await db.collection('scooter-categories').get()
   const categories = res1.docs.map(doc => {
     return { ...doc.data(), id: doc.id }
@@ -23,7 +25,14 @@ export const getStaticProps = async () => {
 };
 
 export default function Catalog({ categories, cards, helmets }) {
-  console.log(categories, cards, helmets);
+  // console.log(categories, cards, helmets);
+
+  const [toggle, setToggle] = useState(null)
+
+  const handleToggle = (helmet) => {
+   setToggle(helmet.like)
+  }
+
   return (
     <div className="layout">
       <header>
@@ -74,12 +83,12 @@ export default function Catalog({ categories, cards, helmets }) {
                 <div className="title-helmet">{helmet.title}</div>
                 <div className="price-helmet">{helmet.price}</div>
               </div>
-              <div className="img-heart">
-                <img
-                  className="icon-heart"
-                  src="/heart-filled.png"
-                  alt="heart image"
-                />
+              <div className="img-heart" onClick={() => handleToggle(helmet)}>
+                {/* {helmet.like && <FavoriteIcon  />}
+                {!helmet.like && <FavoriteBorderIcon />} */}
+
+                {helmet.like && <img src="/heart-filled.png" className="icon-heart"  />}
+                {!helmet.like && <img src="/heart-icon.png" className="icon-heart" />}
               </div>
             </div>
           ))}
@@ -261,6 +270,9 @@ export default function Catalog({ categories, cards, helmets }) {
           display: flex;
           justify-content: center;
           margin-right: 0.625rem;
+        }
+        .MuiSvgIcon-root {
+          background: red;
         }
       `}</style>
     </div>
