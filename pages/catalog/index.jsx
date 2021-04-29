@@ -84,11 +84,8 @@ export default function Catalog({ categories, cards, helmets }) {
                 <div className="price-helmet">{helmet.price}</div>
               </div>
               <div className="img-heart" onClick={() => handleToggle(helmet)}>
-                {/* {helmet.like && <FavoriteIcon  />}
-                {!helmet.like && <FavoriteBorderIcon />} */}
-
                 {helmet.like && <img src="/heart-filled.png" className="icon-heart"  />}
-                {!helmet.like && <img src="/heart-icon.png" className="icon-heart" />}
+                {!helmet.like && <FavoriteBorderIcon />}
               </div>
             </div>
           ))}
